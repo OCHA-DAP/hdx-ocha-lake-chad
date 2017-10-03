@@ -416,39 +416,42 @@ function getChartHeight(){
 var numFormat = function(d){return d3.format('.3s')(d).replace('G','B')};
 var dateFormat = d3.time.format("%d %b %Y");
 
+//var hxlProxy = 'https://proxy.hxlstandard.org/data.json'
+var hxlProxy = 'https://data.humdata.org/hxlproxy/data.json'
+
 var keyStatsCall = $.ajax({ 
     type: 'GET', 
-    url: 'https://proxy.hxlstandard.org/data.json?strip-headers=on&url=https%3A//docs.google.com/spreadsheets/d/1hFEDRWiVW47WLYOmK93YjO4fhjp0KR_kkckKNbNisbw/edit%23gid%3D1812895669&sheet=0',
+    url: hxlProxy + '?strip-headers=on&url=https%3A//docs.google.com/spreadsheets/d/1hFEDRWiVW47WLYOmK93YjO4fhjp0KR_kkckKNbNisbw/edit%23gid%3D1812895669&sheet=0',
     dataType: 'json',
 });
 
 var iadCall = $.ajax({ 
     type: 'GET', 
-    url: 'https://proxy.hxlstandard.org/data.json?strip-headers=on&url=https%3A//docs.google.com/spreadsheets/d/1hFEDRWiVW47WLYOmK93YjO4fhjp0KR_kkckKNbNisbw/edit%23gid%3D631467873&sheet=0',
+    url: hxlProxy + '?strip-headers=on&url=https%3A//docs.google.com/spreadsheets/d/1hFEDRWiVW47WLYOmK93YjO4fhjp0KR_kkckKNbNisbw/edit%23gid%3D631467873&sheet=0',
     dataType: 'json',
 });
 
 var incidentsCall = $.ajax({ 
     type: 'GET', 
-    url: 'https://proxy.hxlstandard.org/data.json?strip-headers=on&url=https%3A//docs.google.com/spreadsheets/d/1hFEDRWiVW47WLYOmK93YjO4fhjp0KR_kkckKNbNisbw/edit%23gid%3D811086350&sheet=0',
+    url: hxlProxy + '?strip-headers=on&url=https%3A//docs.google.com/spreadsheets/d/1hFEDRWiVW47WLYOmK93YjO4fhjp0KR_kkckKNbNisbw/edit%23gid%3D811086350&sheet=0',
     dataType: 'json',
 });
 
 var refugeesCall = $.ajax({ 
     type: 'GET', 
-    url: 'https://proxy.hxlstandard.org/data.json?strip-headers=on&url=https%3A//docs.google.com/spreadsheets/d/1hFEDRWiVW47WLYOmK93YjO4fhjp0KR_kkckKNbNisbw/edit%23gid%3D389521896&sheet=0',
+    url: hxlProxy + '?strip-headers=on&url=https%3A//docs.google.com/spreadsheets/d/1hFEDRWiVW47WLYOmK93YjO4fhjp0KR_kkckKNbNisbw/edit%23gid%3D389521896&sheet=0',
     dataType: 'json',
 });
 
 var accessibleCall = $.ajax({ 
     type: 'GET', 
-    url: 'https://proxy.hxlstandard.org/data.json?strip-headers=on&url=https%3A//docs.google.com/spreadsheets/d/1hFEDRWiVW47WLYOmK93YjO4fhjp0KR_kkckKNbNisbw/edit%23gid%3D1969909003&sheet=0',
+    url: hxlProxy + '?strip-headers=on&url=https%3A//docs.google.com/spreadsheets/d/1hFEDRWiVW47WLYOmK93YjO4fhjp0KR_kkckKNbNisbw/edit%23gid%3D1969909003&sheet=0',
     dataType: 'json',
 });
 
 var fundingCall = $.ajax({ 
     type: 'GET', 
-    url: 'https://proxy.hxlstandard.org/data.json?strip-headers=on&url=https%3A//docs.google.com/spreadsheets/d/1hFEDRWiVW47WLYOmK93YjO4fhjp0KR_kkckKNbNisbw/edit%23gid%3D1889655062&sheet=0',
+    url: hxlProxy + '?strip-headers=on&url=https%3A//docs.google.com/spreadsheets/d/1hFEDRWiVW47WLYOmK93YjO4fhjp0KR_kkckKNbNisbw/edit%23gid%3D1889655062&sheet=0',
     dataType: 'json',
 });
 
