@@ -275,7 +275,8 @@ function generateFoodInsecureGraph(data){
                 localtime: false,
                 tick: {
                     centered: true,
-                    culling: { max: 4 },
+                     count: 6,
+                    culling: { max: 10 },
                     format: '%b %Y',
                     outer: false
                 }
@@ -326,7 +327,8 @@ function generateIADGraph(data){
                 localtime: false,
                 tick: {
                     centered: true,
-                    culling: { max: 4 },
+                     count: 6,
+                    culling: { max: 10 },
                     format: '%b %Y',
                     outer: false
                 }
@@ -381,7 +383,8 @@ function generateDisplacedGraph(data){
                 type: 'timeseries',
                 localtime: false,
                 tick: {
-                    culling: { max: 4 },
+                     count: 6,
+                    culling: { max: 10 },
                     format: '%b %Y',
                     outer: false
                 }
