@@ -245,6 +245,7 @@
 
 			 var ticks = d3.svg.axis()
 			  		.scale(map.timeScale)
+                    .ticks(10)
 			  		.tickFormat('')
 			  		.tickSize(10)
 			  		.tickValues(map.dates);
@@ -252,6 +253,7 @@
 			var axisTicks = svg.append('g')
 				.attr('transform', 'translate(0,' + height / 2 + ')')
 				.call(ticks);
+          // var x_axis = d3.ticks(10);
 
 			axisTicks.selectAll('path').attr('fill', 'none');
 

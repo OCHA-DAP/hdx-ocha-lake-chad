@@ -76,7 +76,10 @@ p{
 #mainviz{
 	margin-bottom: 20px;
 }
-
+.r{
+	margin-bottom: 20px;
+    position: absolute;
+}
 .label{
 	fill: #999;
 	font-weight: normal;
